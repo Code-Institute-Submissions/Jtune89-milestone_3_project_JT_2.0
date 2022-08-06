@@ -19,7 +19,15 @@ print("Welcome to the most AMAZING quiz that ever was or will be \n")
 #user_information
 input ("What is your name? \nName: ")
 print ("\nWelcome (name) & good luck!  Lets start with question 1:")
+score = 0
 
 # QUESTION 1
-input ("\n What is the capital of India? \n a. New Delhi \n b. Mumbai \n c. Jaipur \n d. Kolkata \n Answer: ")
-print (input)
+question1 = input ("\n What is the capital of India? \n a. New Delhi \n b. Mumbai \n c. Jaipur \n d. Kolkata \n Answer: ")
+if question1 == "a" or question1 == "New Delhi" or question1 == "A" or question1 == "new delhi":
+    score += 1
+    print ("\nCorrect! Someone is very clever!!")
+    print ("Score:", score)
+    print ("\n")
+else:
+    print ("Incorrect! The answer is New Delhi, you silly moo!")
+    print ("Score: ", score)
