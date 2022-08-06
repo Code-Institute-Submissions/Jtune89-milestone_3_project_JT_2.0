@@ -29,5 +29,17 @@ if question1 == "a" or question1 == "New Delhi" or question1 == "A" or question1
     print ("Score:", score)
     print ("\n")
 else:
-    print ("Incorrect! The answer is New Delhi, you silly moo!")
+    print ("\nIncorrect! The answer is New Delhi, you silly moo!")
+    print ("Score: ", score)
+    print ("\n")
+
+# QUESTION 2
+question2 = input ("\n Where on the human body is the occipital lobe? \n a. Eyes \n b. Heart \n c. Brain \n d. Foot \n Answer: ")
+if question2 == "c" or question2 == "Brain" or question2 == "C" or question2 == "brain":
+    score += 1
+    print ("\nCorrect! You should be a doctor (or are you already?)!!")
+    print ("Score:", score)
+    print ("\n")
+else:
+    print ("Incorrect! The answer is Brain, open a book you silly sausage!")
     print ("Score: ", score)
