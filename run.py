@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+import datetime
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -14,14 +15,18 @@ SHEET = GSPREAD_CLIENT.open('House Budget')
 
 #managing household budgets by inputting amounts spent on household/entertainment costs, showing remaining balance
 
-def get_rent_mortgage_data():
-    """
-    gets the householder to input the data required
-    """
-    print ("Enter the month for data you want to input data for")
-    print ("i.e. January or February etc\n")
+get_date = input ("Enter the date: ")
 
-    data_str = input ("Enter the month: ")
-    print(f"The data provided is {data_str}")
+day, month, year = get_date.split('/')
 
-get_rent_mortgage_data()
+isValidDate = True
+try:
+    datetime.datetime(int(year), int(month), int(day))
+except ValueError:
+    isValidDate = False
+
+if(isValidDate):
+    print("The date is valid ..")
+else:
+    print("The date you have input is not valid..")
+
