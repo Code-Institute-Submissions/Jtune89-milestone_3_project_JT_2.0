@@ -43,3 +43,16 @@ if question2 == "c" or question2 == "Brain" or question2 == "C" or question2 == 
 else:
     print ("Incorrect! The answer is Brain, open a book you silly sausage!")
     print ("Score: ", score)
+    print ("\n")
+
+# QUESTION 3
+question3 = input ("\n Where in the world would you find Chichen-Itza? \n a. USA \n b. Mexico \n c. Argentina \n d. Honduras \n Answer: ")
+if question3 == "b" or question3 == "Mexico" or question3 == "B" or question3 == "mexico":
+    score += 1
+    print ("\nCorrect! You snazzy globetrotter!!")
+    print ("Score:", score)
+    print ("\n")
+else:
+    print ("Incorrect! The answer is Mexico, go do some travelling!")
+    print ("Score: ", score)
+    print ("\n")
