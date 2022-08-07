@@ -1,7 +1,6 @@
 play = True
 leaderboard = ''
 
-
 while play:
     score = 0
 # Welcome message to Quiz
