@@ -1,31 +1,48 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+QUIZ
 
-Welcome Jtune89,
+The quiz is a terminal game, which runs in the CI mock terminal on Heroku
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Users are required to answer questions that are put to them with a leaderboard at the end of the quiz to show how they performed against other people.  There are 5 questions in the quiz which are not the usual questions.  The quiz is also a little bit insulting if you get a question wrong but very complementary if you get a question right.
 
-## Reminders
+Here is the live version of my project: https://jt-quiz.herokuapp.com/ 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+*I cannot get the screenshot of the "Am I responsive" to paste here*
 
-## Creating the Heroku app
+How to play:
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+Players are asked to enter their name at the start of the quiz, and then they are presented with question 1.  Answering each question then results in the next question appearing until they reach the end of the quiz.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+The answers are a, b, c or d.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+At the end, they are presented with a leaderboard of players who played before.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
-Connect your GitHub repository and deploy as normal.
+Features:
+Quiz features a leaderboard of people who have played beforehand.  Questions are always the same regardless of who is playing.
+They are advised of the correct answer and insulted if they get it wrong.  They are complemented if they get a question right.
 
-## Constraints
+I have built it to accept capitalised A, B, C or D as well as variations of the written wording to avoid them being penalised when getting the right answer.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+Testing:
+I have run the code through the PEP8 check and some of the lines of code are showing as too long, however there is little I can do about that as the questions and answers are required to be on one line.
+Tested manually within the terminal and within the heroku app and the code behaves as expected without any issues
 
------
-Happy coding!
+Remaining Bugs:
+PEP8 lines too long but does not affect the interaction with the game.
+
+validator testing:
+PEP8 online checker, as above
+
+Deployment:
+cloned repo
+created heroku app
+set the buildbacks as required
+linked the Heroku app to the repo
+clicked on deploy
+
+credits:
+how to build a quiz videos on youtube.
+code institute love sandwiches walk through
+
+call outs:
+I went back and forth on this project and what was the right thing and finally settled on a quiz.
